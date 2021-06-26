@@ -21,6 +21,6 @@ In my case, I was missing two things: google search as an option and *some* keyb
 
 ## Do you recommend other configuration files?
 
-Yes.  Artyom Bologov (@aartake) has a more thorough and complex [config file](https://github.com/aartaka/nyxt-config). In addition, you can also check out John Mercouris (@jmercouris) [config files](https://discourse.atlas.engineer/t/my-lightweight-configuration/47/6) directly from the Nyxt community forum.
+Yes.  Artyom Bologov (@aartake) has a more thorough and complex [config file](https://github.com/aartaka/nyxt-config). In addition, you can also check out John Mercouris (@jmercouris) [config files](https://discourse.atlas.engineer/t/my-lightweight-configuration/47/6) directly from the Nyxt community forum. Both of them are from the developer team. Actually, John is one of the co-founders of the project. 
 
-There is an especific tag on the discourse forum named **configuration exposè** just to showcase [config files](https://discourse.atlas.engineer/c/nyxt/configuration-expose/8). May the power of Nyxt be with you :)
+On Nyxt's forum, there is even an especific tag for posts about config files called [**configuration exposè**](https://discourse.atlas.engineer/c/nyxt/configuration-expose/8). May the power of Nyxt be with you :)
