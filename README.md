@@ -6,6 +6,8 @@ You can check it out [here](https://github.com/pdelfino/nyxt-config/blob/main/in
 
 Nyxt is a keyboard-oriented, infinitely extensible web browser designed for power users. Conceptually inspired by Emacs and Vim, it has familiar key-bindings (Emacs, vi, CUA), and is fully configurable in Lisp.
 
+![alt text](https://github.com/pdelfino/public-notes/blob/main/Screenshot%20from%202021-06-26%2013-30-29.png)
+
 Useful pointers:
 - project's repository on [GitHub](https://github.com/atlas-engineer/nyxt); and,
 - project's [homepage](https://nyxt.atlas.engineer/).
