@@ -17,7 +17,7 @@ Besides recording videos and writing articles about Nyxt, sharing config files i
 
 I am still new to the Nyxt universe. Thus, I am tacking a minimalistically approach. The out-of-box configuration is already pretty good.
 
-In my case, I was missing two things: google search as an option and *some* keybindings from Emacs. I could have migrated to the Emacs or Vim mode (I actually did for awhile_. But I would rather stay in the default mode changing just what I was missing.
+In my case, I was missing two things: google search as an option and *some* keybindings from Emacs. I could have migrated to the Emacs or Vim mode (I actually did for awhile. But I would rather stay in the default mode changing just what I was missing.
 
 ## Do you recommend other configuration files?
 
