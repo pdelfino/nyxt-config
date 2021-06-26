@@ -2,8 +2,7 @@
 
 Nyxt is a keyboard-oriented, infinitely extensible web browser designed for power users. Conceptually inspired by Emacs and Vim, it has familiar key-bindings (Emacs, vi, CUA), and is fully configurable in Lisp.
 
-Nyxt's repo on [GitHub](https://github.com/atlas-engineer/nyxt).
-Nyxt's [homepage](https://nyxt.atlas.engineer/).
+Nyxt's repo on [GitHub](https://github.com/atlas-engineer/nyxt) and the project's [homepage](https://nyxt.atlas.engineer/).
 
 ## Why do you like Nyxt?
  
