@@ -1,4 +1,4 @@
-# Pedro Delfino configuration file for the Nyxt browser
+# My configuration file for the Nyxt browser
 
 You can check it out [here](https://github.com/pdelfino/nyxt-config/blob/main/init.lisp).
 
