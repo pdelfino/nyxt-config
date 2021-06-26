@@ -11,7 +11,7 @@ Nyxt is pretty cool in my opinion and I intend to produce more content about it.
 
 ## Why sharing your Nyxt config files?
 
-Besides recording videos and articles about Nyxt, sharing config files is another way of spreading the word about the project. Reading config files from other Nyxt's users helped me to build my own configuration. It was a little bit tricky specially due to Common Lisp package notation.
+Besides recording videos and writing articles about Nyxt, sharing config files is another way of spreading the word about the project. Reading config files from other Nyxt's users helped me to build my own configuration. It was a little bit tricky specially due to Common Lisp package notation.
 
 ## What is your approach to your config files?
 
