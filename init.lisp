@@ -21,5 +21,5 @@
                       "C-f" 'nyxt/web-mode:scroll-right
                       "C-b" 'nyxt/web-mode:scroll-left
                       "M-s->" 'nyxt/web-mode:scroll-to-bottom
-                      "M-s-<" 'nyxt/web-mode:scroll-to-top)))))
-
+                      "M-s-<" 'nyxt/web-mode:scroll-to-top
+                      "C-s" 'nyxt/web-mode:search-buffer)))))
