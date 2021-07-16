@@ -20,6 +20,15 @@
                       "C-p" 'nyxt/web-mode:scroll-up
                       "C-f" 'nyxt/web-mode:scroll-right
                       "C-b" 'nyxt/web-mode:scroll-left
+                      "C-g" 'query-selection-in-search-engine
                       "M-s->" 'nyxt/web-mode:scroll-to-bottom
                       "M-s-<" 'nyxt/web-mode:scroll-to-top
-                      "C-s" 'nyxt/web-mode:search-buffer)))))
+                      "C-s" 'nyxt/web-mode:search-buffer
+                      "M-w" 'nyxt/web-mode:copy
+                      "C-y" 'nyxt/web-mode:paste
+                      "C-Y" 'nyxt/web-mode:paste-from-clipboard-ring)))))
+
+(define-configuration (prompt-buffer)
+    ((default-modes (append '(emacs-mode) %slot-default%))
+     (hide-suggestion-count-p t)))
+
