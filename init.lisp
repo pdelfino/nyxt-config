@@ -14,7 +14,8 @@
 
 (define-configuration buffer
   ((override-map (let ((map (make-keymap "override-map")))
-                    (define-key map
+                   (define-key map
+                      "C-space" 'noop
                       "M-x" 'execute-command
                       "C-n" 'nyxt/web-mode:scroll-down
                       "C-p" 'nyxt/web-mode:scroll-up
@@ -32,3 +33,5 @@
     ((default-modes (append '(emacs-mode) %slot-default%))
      (hide-suggestion-count-p t)))
 
+;; (define-configuration bookmark-frequent-visits-mode
+;;   ((threshold 10)))
