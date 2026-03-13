@@ -1,6 +1,6 @@
 # nyxt-config
 
-![Wanderer above the Sea of Fog](https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg/960px-Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg)
+![Wanderer above the Sea of Fog](./painting.jpg)
 
 *"Wanderer above the Sea of Fog" (c. 1818) by Caspar David Friedrich — [Wikipedia](https://en.wikipedia.org/wiki/Wanderer_above_the_Sea_of_Fog)*
 
