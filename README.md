@@ -1,33 +1,65 @@
-# My configuration file for the Nyxt browser
+# nyxt-config
 
-You can check it out [here](https://github.com/pdelfino/nyxt-config/blob/main/init.lisp).
+![Wanderer above the Sea of Fog](https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg/700px-Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg)
 
-## What is Nyxt?
+*"Wanderer above the Sea of Fog" (c. 1818) by Caspar David Friedrich — [Wikipedia](https://en.wikipedia.org/wiki/Wanderer_above_the_Sea_of_Fog)*
 
-Nyxt is a keyboard-oriented, infinitely extensible web browser designed for power users. Conceptually inspired by Emacs and Vim, it has familiar key-bindings (Emacs, vi, CUA), and is fully configurable in Lisp.
+**Configuration for the Nyxt browser -- bringing Emacs keybindings to keyboard-driven web browsing.**
 
-![alt text](https://github.com/pdelfino/public-notes/blob/main/Screenshot%20from%202021-06-26%2013-30-29.png)
+## About
 
-Useful pointers:
-- project's repository on [GitHub](https://github.com/atlas-engineer/nyxt); and,
-- project's [homepage](https://nyxt.atlas.engineer/).
+[Nyxt](https://nyxt.atlas.engineer/) is a keyboard-oriented, extensible web browser inspired by Emacs and Vim, fully configurable in Common Lisp. This repo contains a minimalist `init.lisp` that keeps the excellent defaults while adding two things: Google as a search engine and a set of Emacs-style keybindings on top of Nyxt's default CUA mode.
 
-## Why do you like Nyxt?
- 
-Nyxt is pretty cool in my opinion. I even did a [video](https://www.youtube.com/watch?v=8yBjfjFE0fk) about what is Nyxt and why I like it so much. This is just a protype/pilot video for a side-project on making Nyxt brief tutorials. I might call this the *Nyxt Academy*. In addition to audiovisual content, also intend to write more texts like [this](https://nyxt.atlas.engineer/article/enable-mode.org).
+The philosophy is simple: the out-of-the-box experience is already good, so only override what is missing.
 
-## Why sharing your Nyxt config files?
+## Key Customizations
 
-Besides recording videos and writing articles about Nyxt, sharing config files is another way of spreading the word about the project. Reading config files from other Nyxt's users helped me to build my own configuration. It was a little bit tricky especially due to Common Lisp package notation.
+### Search Engines
 
-## What is your approach to your config files?
+- **Google** -- `https://www.google.com/search?q=~a`
+- **Wikipedia** -- `https://en.wikipedia.org/w/index.php?search=~a`
 
-I am still new to the Nyxt universe. Thus, I am taking a minimalistic approach. The out-of-box configuration is already pretty good.
+### Emacs Keybindings in CUA Mode
 
-In my case, I was missing two things: google search as an option and *some* keybindings from Emacs. I could have migrated to the Emacs mode or Vim mode (I actually did for a while). But I would rather stay in the default mode changing just what I was missing.
+Rather than switching entirely to Emacs mode, these bindings bring familiar Emacs navigation into the default CUA keymap:
 
-## Do you recommend other configuration files?
+| Binding       | Action                    |
+|---------------|---------------------------|
+| `M-x`         | Execute command           |
+| `C-n` / `C-p` | Scroll down / up          |
+| `C-f` / `C-b` | Scroll right / left       |
+| `C-s`         | Search buffer             |
+| `M-w`         | Copy                      |
+| `C-y`         | Paste                     |
+| `C-Y`         | Paste from clipboard ring |
+| `M-s-<` / `M-s->` | Scroll to top / bottom |
+| `C-g`         | Query selection in search engine |
 
-Yes.  Artyom Bologov (@aartake) has a more thorough and complex [config file](https://github.com/aartaka/nyxt-config). In addition, you can also check out John Mercouris (@jmercouris) [config files](https://discourse.atlas.engineer/t/my-lightweight-configuration/47/6) directly from the Nyxt community forum. Both of them are from the developer team. Actually, John is one of the co-founders of the project. So, you better check what they did!
+The prompt buffer uses full Emacs mode for comfortable minibuffer-style interaction.
 
-On Nyxt's community forum, there is even an specific tag for posts about config files called [**configuration exposè**](https://discourse.atlas.engineer/c/nyxt/configuration-expose/8). May the power of Nyxt be with you :)
+## Files
+
+- `init.lisp` -- active configuration (Nyxt 3.0+)
+- `before-3.0.lisp` -- archived config from before the Nyxt 3.0 API changes
+
+## Installation
+
+```shell
+# Clone
+git clone git@github.com:pdelfino/nyxt-config.git ~/projects/nyxt-config
+
+# Symlink to Nyxt's config directory
+mkdir -p ~/.config/nyxt
+ln -sf ~/projects/nyxt-config/init.lisp ~/.config/nyxt/init.lisp
+```
+
+### Requirements
+
+- [Nyxt browser](https://nyxt.atlas.engineer/) 3.0+
+
+## Related
+
+- Pedro's [video introduction to Nyxt](https://www.youtube.com/watch?v=8yBjfjFE0fk) explaining what it is and why it matters
+- [Official Nyxt repository](https://github.com/atlas-engineer/nyxt)
+- [Nyxt community forum -- configuration expose](https://discourse.atlas.engineer/c/nyxt/configuration-expose/8)
+- Other notable configs: [aartaka/nyxt-config](https://github.com/aartaka/nyxt-config), [jmercouris's config](https://discourse.atlas.engineer/t/my-lightweight-configuration/47/6)
